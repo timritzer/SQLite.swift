@@ -25,8 +25,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"
   s.watchos.deployment_target = "2.0"
 
-  s.preserve_paths = 'CocoaPods/**/*'
-
   s.libraries = 'sqlite3'
   s.source_files = 'SQLite/**/*.{c,h,m,swift}'
   s.private_header_files = 'SQLite/Core/fts3_tokenizer.h'
