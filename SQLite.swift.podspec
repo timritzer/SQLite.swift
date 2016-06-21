@@ -28,12 +28,19 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'CocoaPods/**/*'
   s.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS[sdk=macosx*]'           => '$(SRCROOT)/SQLite.swift/CocoaPods/macosx',
+    'MODULEMAP_FILE[sdk=macosx*]'                => '$(SRCROOT)/SQLite.swift/CocoaPods/macosx/module.modulemap',
     'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(SRCROOT)/SQLite.swift/CocoaPods/iphoneos',
+    'MODULEMAP_FILE[sdk=iphoneos*]'              => '$(SRCROOT)/SQLite.swift/CocoaPods/iphoneos/module.modulemap',
     'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(SRCROOT)/SQLite.swift/CocoaPods/iphonesimulator',
+    'MODULEMAP_FILE[sdk=iphonesimulator*]'       => '$(SRCROOT)/SQLite.swift/CocoaPods/iphonesimulator/module.modulemap',
     'SWIFT_INCLUDE_PATHS[sdk=appletvos*]'        => '$(SRCROOT)/SQLite.swift/CocoaPods/appletvos',
+    'MODULEMAP_FILE[sdk=appletvos*]'             => '$(SRCROOT)/SQLite.swift/CocoaPods/appletvos/module.modulemap',
     'SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]' => '$(SRCROOT)/SQLite.swift/CocoaPods/appletvsimulator',
+    'MODULEMAP_FILE[sdk=appletvsimulator*]'      => '$(SRCROOT)/SQLite.swift/CocoaPods/appletvsimulator/module.modulemap',
     'SWIFT_INCLUDE_PATHS[sdk=watchos*]'          => '$(SRCROOT)/SQLite.swift/CocoaPods/watchos',
+    'MODULEMAP_FILE[sdk=watchos*]'               => '$(SRCROOT)/SQLite.swift/CocoaPods/watchos/module.modulemap',
     'SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]'   => '$(SRCROOT)/SQLite.swift/CocoaPods/watchsimulator'
+    'MODULEMAP_FILE[sdk=watchsimulator*]'        => '$(SRCROOT)/SQLite.swift/CocoaPods/watchsimulator/module.modulemap',
   }
 
   s.libraries = 'sqlite3'
